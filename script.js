@@ -164,6 +164,7 @@ viewDetailsButtons.forEach(button => {
     button.addEventListener("click", () => {
         const modalId = button.getAttribute("data-modalId");
         const modal = document.getElementById(modalId);
+        modal.classList.add("hien")
         modal.style.display = "flex";
     });
 });
