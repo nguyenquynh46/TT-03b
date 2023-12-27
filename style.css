@@ -1,0 +1,208 @@
+
+.menu{
+    display: none;
+}
+.menu1:hover>a,.top:hover>i{
+    -webkit-text-fill-color: white;
+}
+
+.list-menu{
+    transform: translateX(300px); /* Thay đổi giá trị translateX thành 100% để ẩn slide-container ngoài màn hình bên phải */
+    transition: transform 0.3s ease-out;
+}
+.list-menu.open {
+    transform: translateX(0); /* Thay đổi giá trị translateX thành 0% để hiển thị slide-container */
+}
+header{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url("https://imgs.vietnamnet.vn/Images/2012/07/06/16/20120706163826_6.jpg");
+}
+.anh{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+header .img, header img{
+    border-radius: 50px 50px 0;
+}
+.img2{
+    margin-bottom: -25%;
+}
+.img4{
+    margin-bottom: -10%;
+}
+.letter{
+    color: transparent;
+     background: linear-gradient(to right, rgb(43,43,162), #cf65cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;"
+}
+.title1:hover{
+    background: linear-gradient(to right, rgb(43,43,162), #cf65cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;"
+}
+.background{
+    background: linear-gradient(to right, rgb(79,79,210), #a15abd)
+}
+.pp1{
+    border-radius: 60px 60px 0;
+}
+.pp2{
+    border-radius: 60px 60px 0 0 ;
+}
+.pp3{
+    border-radius: 60px 60px 60px 0;
+}
+.pp4{
+    border-radius: 60px 0 60px 60px ;
+}
+.pp5 {
+    border-radius: 0 0 60px 60px;
+}
+.pp6{
+    border-radius: 0 60px 60px  ;
+}
+.item {
+    top: -80px
+
+}
+.dangnhap {
+    background: linear-gradient(to right, rgb(79, 79, 210), #a15abd);
+
+}
+.dangnhap:hover{
+    outline: 2px solid #8c1cec;
+    transition: background 0.3s ease-in-out;
+    background: linear-gradient(to right, rgb(43,43,162), #cf65cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;"
+}
+.nut2:hover{
+    -webkit-text-fill-color: white;
+    background: linear-gradient(to right, rgb(79, 79, 210), #a15abd);
+}
+.box {
+    display: none;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.hien{
+    opacity: 0;
+    animation: fade 1s ease-in-out forwards;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.active {
+    position: relative;
+    background-image: linear-gradient(to right, rgb(43, 43, 162), #cf65cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgb(43, 43, 162), #cf65cf);
+}
+.anbot{
+    display: none;
+}
+
+@media screen and (max-width:1199px){
+    .menu{
+        display: inline-block;
+    }
+    .header p {
+    margin-top: 30px;
+   }
+    .header p:first-child,.the{
+        margin-top: 100px!important
+    }
+    .footer{
+        align-items: center;
+    }
+    .language{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:992px){
+    .img2{
+        height: 400px!important;
+        margin-bottom: 50px;
+        margin-top: 50px
+    }
+    .header p {
+        margin-top: 25px;
+    }
+    .item{
+        top:-120px
+    }
+    .pp1,.pp2,.pp3,.pp4,.pp5,.pp6{
+        border-radius: 60px 60px 0;
+    }
+}
+@media screen and (max-width:768px){
+    .header p:first-child{
+        font-size: 20px!important;
+    }
+    .header .language{
+        font-size: 14px;
+    }
+    .header .des{
+        line-height: 1.6;
+    }
+   .item1{
+    font-size: 45px!important;
+  }
+    .item2{
+        font-size: 15px!important;
+    }
+    .help{
+        font-size: 28px!important;
+    }
+    .time1,.time2{
+        width: 100% !important;
+    }
+    .time2{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .paragraph{
+        margin-top: 0!important;
+    }
+    .noti{
+        font-size: 25px!important;
+    }
+    .ht1{
+        margin-top: 40px;
+    }
+
+}
+
+
+
+
