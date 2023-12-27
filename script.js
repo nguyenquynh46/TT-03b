@@ -148,4 +148,32 @@ function anbot() {
     }
     adds.style.display = "flex";
 }
+// khi di chuyển vào từng dự án nút xem thêm sẽ xuât hiện
+function showButton(container) {
+    var button = container.querySelector('.show-more');
+    button.style.display = 'block';
+}
+
+function hideButton(container) {
+    var button = container.querySelector('.show-more');
+    button.style.display = 'none';
+}
+// Xử lý sự kiện khi nhấp vào nút "Xem chi tiết"
+const viewDetailsButtons = document.querySelectorAll(".view-details");
+viewDetailsButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const modalId = button.getAttribute("data-modalId");
+        const modal = document.getElementById(modalId);
+        modal.style.display = "flex";
+    });
+});
+
+// Xử lý sự kiện khi nhấp vào nút "Đóng" trong modal
+const closeModalButtons = document.querySelectorAll(".close-modal");
+closeModalButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const modal = button.closest(".modal");
+        modal.style.display = "none";
+    });
+});
 

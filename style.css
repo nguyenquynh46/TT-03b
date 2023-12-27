@@ -83,6 +83,9 @@ header .img, header img{
     -webkit-text-fill-color: white;
     background: linear-gradient(to right, rgb(79, 79, 210), #a15abd);
 }
+.show-more{
+    display: none;
+}
 .box {
     display: none;
     opacity: 0;
@@ -131,7 +134,17 @@ header .img, header img{
 .anbot{
     display: none;
 }
-
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 @media screen and (max-width:1199px){
     .menu{
         display: inline-block;
@@ -176,7 +189,7 @@ header .img, header img{
         line-height: 1.6;
     }
    .item1{
-    font-size: 45px!important;
+    font-size: 42px!important;
   }
     .item2{
         font-size: 15px!important;
@@ -202,7 +215,11 @@ header .img, header img{
     }
 
 }
-
+@media screen and (max-width:768px){
+    .anhlogo{
+        width: 60%!important;
+    }
+}
 
 
 
